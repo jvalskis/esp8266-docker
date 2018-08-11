@@ -8,7 +8,7 @@ RUN add-apt-repository ppa:git-core/ppa && \
         git  \
         python-pip
 
-RUN git clone --branch 2.4.1 --depth 1 https://github.com/esp8266/Arduino.git esp8266
+RUN git clone --branch 2.4.2 --depth 1 https://github.com/esp8266/Arduino.git esp8266
 WORKDIR /esp8266/tools
 RUN python get.py
 
